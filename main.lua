@@ -15,3 +15,4 @@ end
 while current ~= top_level do
     turtle.digUp()
     turtle.up()
+end
