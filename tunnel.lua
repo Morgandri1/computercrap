@@ -1,8 +1,9 @@
 turtle.refuel()
 io.write("how far would you like to tunnel? ")
+distance = 0
 distance = io.read("*n")
-start = 0
-current = 0
+start = 1
+current = 1
 
 while current < distance do
     turtle.dig()
