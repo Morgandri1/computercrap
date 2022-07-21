@@ -3,7 +3,7 @@ io.write("what y level would you like the turtle to return to when finished? ")
 top_level = io.read()+60
 current = top_level
 while current ~= 0 do
-    -- cycle
+    -- cycle 1
     turtle.digDown()
     turtle.down()
     current = current - 1
