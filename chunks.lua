@@ -72,6 +72,8 @@ while current ~= 0 do
         excavate()
         excavate()
         excavate()
+        turtle.turnLeft()
+        excavate()
     end
     one()
     two()
