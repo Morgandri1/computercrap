@@ -1,5 +1,6 @@
 length = 17
 
+local function Dd(n) if n==nil then n=64 end turtle.dropDown(n) end
 local function waitKey(strText)
     local event, scancode
     write(strText) 
@@ -17,9 +18,12 @@ print("slot 5: seeds/replant material for line 4")
 
 waitKey("press any key to start...")
 
+turtle.refuel()
 turtle.forward()
 turtle.up()
 turtle.up()
+turtle.forward()
+turtle.forward()
 
 function line()
     turtle.digDown()
@@ -27,6 +31,42 @@ function line()
     turtle.forward()
 end
 
-for i = 1, 16 do
+for i = 1, 17 do
+    turtle.select(2)
     line()
 end
+turtle.turnLeft()
+turtle.forward()
+turtle.turnLeft()
+for i = 1, 17 do
+    turtle.select(3)
+    line()
+end
+turtle.turnRight()
+turtle.forward()
+turtle.turnRight()
+for i = 1, 17 do
+    turtle.select(3)
+    line()
+end
+turtle.turnRight()
+turtle.forward()
+turtle.turnRight()
+for i = 1, 17 do
+    turtle.select(3)
+    line()
+end
+
+
+turtle.select(6)
+Dd(64)
+turtle.select(7)
+Dd(64)
+turtle.select(8)
+Dd(64)
+turtle.select(9)
+Dd(64)
+turtle.select(10)
+Dd(64)
+turtle.select(11)
+Dd(64)
