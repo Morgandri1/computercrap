@@ -1,5 +1,12 @@
 length = 17
 
+local function waitKey(strText)
+    local event, scancode
+    write(strText) 
+    event, scancode = os.pullEvent("key") 
+    print()
+  end
+
 print("directions: ")
 
 print("slot 1: fuel (same stuff you use in furnaces)")
