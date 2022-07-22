@@ -28,7 +28,6 @@ while current ~= 0 do
     excavate()
     excavate()
     excavate()
-    excavate()
     turtle.turnLeft()
     excavate()
     -- cycle 2
@@ -49,14 +48,12 @@ while current ~= 0 do
         excavate()
         excavate()
         excavate()
-        excavate()
         turtle.turnRight()
         excavate()
     end
     -- cycle 3
-    function two():
+    function two()
         turtle.turnRight()
-        excavate()
         excavate()
         excavate()
         excavate()
