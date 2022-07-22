@@ -20,6 +20,6 @@ function line()
     turtle.forward()
 end
 
-for 1= 1, 16 do
+for i = 1, 16 do
     line()
 end
