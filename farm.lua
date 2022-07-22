@@ -1,14 +1,14 @@
 length = 17
 
-print([[
-directions: 
+print("directions: ")
 
-slot 1: fuel (same stuff you use in furnaces)
-slot 2: seeds/replant material for line 1
-slot 3: seeds/replant material for line 2
-slot 4: seeds/replant material for line 3
-slot 5: seeds/replant material for line 4
-]])
+print("slot 1: fuel (same stuff you use in furnaces)")
+print("slot 2: seeds/replant material for line 1")
+print("slot 3: seeds/replant material for line 2")
+print("slot 4: seeds/replant material for line 3")
+print("slot 5: seeds/replant material for line 4")
+
+waitKey("press any key to start...")
 
 turtle.forward()
 turtle.up()
