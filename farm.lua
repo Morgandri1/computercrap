@@ -37,6 +37,7 @@ for i = 1, 17 do
 end
 turtle.turnLeft()
 turtle.forward()
+turtle.forward()
 turtle.turnLeft()
 for i = 1, 17 do
     turtle.select(3)
@@ -44,12 +45,14 @@ for i = 1, 17 do
 end
 turtle.turnRight()
 turtle.forward()
+turtle.forward()
 turtle.turnRight()
 for i = 1, 17 do
     turtle.select(3)
     line()
 end
 turtle.turnRight()
+turtle.forward()
 turtle.forward()
 turtle.turnRight()
 for i = 1, 17 do
