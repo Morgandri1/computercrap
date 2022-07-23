@@ -25,9 +25,9 @@ turtle.up()
 turtle.forward()
 turtle.forward()
 
-function line()
+function line(n)
     turtle.digDown()
-    turtle.placeDown(2)
+    turtle.placeDown(n)
     turtle.forward()
 end
 
@@ -35,7 +35,7 @@ function farmL(lineNum)
     lineNum = lineNum+1
     for i = 1, 17 do
         turtle.select(lineNum)
-        line()
+        line(lineNum)
     end
     turtle.turnLeft()
     turtle.forward()
@@ -47,7 +47,7 @@ function farmR(lineNum)
     lineNum = lineNum+1
     for i = 1, 17 do
         turtle.select(lineNum)
-        line()
+        line(lineNum)
     end
     turtle.turnRight()
     turtle.forward()
