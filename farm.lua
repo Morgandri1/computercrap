@@ -31,35 +31,21 @@ function line()
     turtle.forward()
 end
 
-for i = 1, 17 do
-    turtle.select(2)
-    line()
-end
-turtle.turnLeft()
-turtle.forward()
-turtle.forward()
-turtle.turnLeft()
-for i = 1, 17 do
-    turtle.select(3)
-    line()
-end
-turtle.turnRight()
-turtle.forward()
-turtle.forward()
-turtle.turnRight()
-for i = 1, 17 do
-    turtle.select(3)
-    line()
-end
-turtle.turnRight()
-turtle.forward()
-turtle.forward()
-turtle.turnRight()
-for i = 1, 17 do
-    turtle.select(3)
-    line()
+function farm()
+    for i = 1, 17 do
+        turtle.select(2)
+        line()
+    end
+    turtle.turnLeft()
+    turtle.forward()
+    turtle.forward()
+    turtle.turnLeft()
 end
 
+farm()
+farm()
+farm()
+farm()
 
 turtle.select(6)
 Dd(64)
