@@ -63,14 +63,14 @@ farmR(4)
 turtle.down()
 turtle.down()
 
-turtle.left()
-turtle.left()
+turtle.turnLeft()
+turtle.turnLeft()
 
 turtle.forward()
 turtle.forward()
 turtle.forward()
 
-turtle.left()
+turtle.turnLeft()
 
 turtle.forward()
 turtle.forward()
@@ -80,7 +80,7 @@ turtle.forward()
 turtle.forward()
 turtle.forward()
 
-turtle.left()
+turtle.turnLeft()
 
 turtle.select(6)
 Dd(64)
