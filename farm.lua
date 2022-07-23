@@ -31,9 +31,10 @@ function line()
     turtle.forward()
 end
 
-function farm()
+function farmL(line)
+    line = line+1
     for i = 1, 17 do
-        turtle.select(2)
+        turtle.select(line)
         line()
     end
     turtle.turnLeft()
@@ -42,10 +43,22 @@ function farm()
     turtle.turnLeft()
 end
 
-farm()
-farm()
-farm()
-farm()
+function farmR(line)
+    line = line+1
+    for i = 1, 17 do
+        turtle.select(line)
+        line()
+    end
+    turtle.turnRight()
+    turtle.forward()
+    turtle.forward()
+    turtle.turnRight()
+end
+
+farmL(1)
+farmR(2)
+farmL(3)
+farmR(4)
 
 turtle.select(6)
 Dd(64)
