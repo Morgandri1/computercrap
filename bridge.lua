@@ -1,12 +1,12 @@
 io.write("please place the building materials (spread equally) in slots 1, 2, and 3, then press enter to continue")
 io.read()
 
-io.write("how long should the bridge be?")
+io.write("how long should the bridge be? ")
 distance = io.read()
 
 function cycle(n)
-    togo = distance / 3
-    while togo ~= 0 do
+    togo = distance
+    while togo not 0 do
         turtle.forward()
         turtle.placeDown(n)
         togo -= 1
