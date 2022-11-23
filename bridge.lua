@@ -4,23 +4,31 @@ io.read()
 io.write("how long should the bridge be? ")
 distance = io.read()
 
-function cycle(n)
-    togo = distance
-    while togo not 0 do
-        turtle.forward()
-        turtle.placeDown(n)
-        togo -= 1
-
-    end
+function move()
+    turtle.forward()
+    turtle.placeDown()
 end
 
-cycle(0)
+togo = distance
+print("\n", togo, "\n")
+while not togo == 0 do
+    move
+    togo -= 1
+end
 turtle.turnLeft()
 turtle.forward()
 turtle.turnLeft()
-cycle(1)
+togo = distance
+while not togo == 0 do
+    move
+    togo -= 1
+end
 turtle.turnLeft()
 turtle.forward()
 turtle.forward()
 turtle.turnLeft()
-cycle(2)
+togo = distance
+while not togo == 0 do
+    move
+    togo -= 1
+end
