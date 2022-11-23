@@ -9,7 +9,7 @@ function cycle(n)
     while togo ~= 0 do
         turtle.forward()
         turtle.placeDown(n)
-        togo - 1
+        togo -= 1
 
     end
 end
