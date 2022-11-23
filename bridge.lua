@@ -13,7 +13,7 @@ togo = distance
 print("\n", togo, "\n")
 while not togo == 0 do
     move
-    togo -= 1
+    togo = togo - 1
 end
 turtle.turnLeft()
 turtle.forward()
@@ -21,7 +21,7 @@ turtle.turnLeft()
 togo = distance
 while not togo == 0 do
     move
-    togo -= 1
+    togo = togo - 1
 end
 turtle.turnLeft()
 turtle.forward()
@@ -30,5 +30,5 @@ turtle.turnLeft()
 togo = distance
 while not togo == 0 do
     move
-    togo -= 1
+    togo = togo - 1
 end
