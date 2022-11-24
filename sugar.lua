@@ -12,14 +12,20 @@ turtle.refuel()
 turtle.turnLeft()
 line()
 turtle.turnLeft()
-for i=1,18 do
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+line()
+
+turtle.turnLeft()
+for i=1,17 do
     turtle.dig()
     turtle.forward()
 end 
 turtle.turnLeft()
 line()
 turtle.turnLeft()
-for i=1,18 do
+for i=1,17 do
     turtle.dig()
     turtle.forward()
 end
